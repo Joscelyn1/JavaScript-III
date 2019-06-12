@@ -32,18 +32,18 @@ console.log(this);
 
 
 // Principle 2: implicit binding
-/*
-const joscelyn = {
+
+const me = {
     name: 'joscelyn',
     age: 29,
     favoriteColor: 'blue',
     tellMeThis: function() {
-        console.log(this)
+        return this;
     }
 }
 
-joscelyn.tellMeThis(); // will return the object "joscelyn"
-*/
+console.log(me.tellMeThis()); // will return the object "joscelyn"
+
 
 // Principle 3: new binding
 
